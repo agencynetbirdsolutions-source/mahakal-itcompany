@@ -6,7 +6,7 @@
 
 <title>dimand Twenty Faur Seven | Premium Jewellery</title>
 
-<meta name="description" content="dimand Twenty Faur Seven offers elegant gold, diamond and bridal jewellery designed for special moments. Connect with us on WhatsApp.">
+<meta name="description" content="dimand Twenty Faur Seven — premium gold, diamond and bridal jewellery. Connect with us on WhatsApp.">
 
 <style>
 * {
@@ -20,8 +20,9 @@ html {
 }
 
 body {
+  margin: 0;
   background: #061710;
-  color: #f4fbf7;
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
@@ -31,19 +32,21 @@ body {
 ========================= */
 
 .header {
+  width: 100%;
   position: sticky;
   top: 0;
-  z-index: 100;
-  width: 100%;
+  z-index: 9999;
   background: rgba(6, 23, 16, 0.97);
-  backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(245, 158, 11, 0.18);
+  backdrop-filter: blur(12px);
 }
 
 .header-inner {
+  width: 100%;
   max-width: 1200px;
   margin: auto;
   padding: 12px 18px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,21 +71,26 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-top: 2px;
 }
+
+/* HEADER WHATSAPP */
 
 .header-wa {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 7px;
+
+  padding: 10px 17px;
+  border-radius: 999px;
+
   background: #25D366;
   color: #fff;
+
   text-decoration: none;
   font-size: 13px;
   font-weight: 800;
-  padding: 10px 17px;
-  border-radius: 999px;
+
   box-shadow: 0 8px 25px rgba(37, 211, 102, .25);
 }
 
@@ -92,118 +100,69 @@ body {
 }
 
 /* =========================
-   HERO
+   TOP IMAGE HERO
 ========================= */
 
 .hero {
   width: 100%;
-  min-height: calc(100vh - 65px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background:
-    radial-gradient(
-      circle at 50% 15%,
-      rgba(35, 105, 69, .38),
-      transparent 48%
-    ),
-    #061710;
-  padding: 55px 18px 70px;
+  background: #061710;
+  padding: 8px;
 }
 
 .hero-container {
   width: 100%;
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-}
-
-/* TOP LABEL */
-
-.eyebrow {
-  color: #fbbf24;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 18px;
-}
-
-/* HEADING */
-
-.hero h1 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(38px, 7vw, 72px);
-  line-height: 1.05;
-  color: #fff;
-  margin-bottom: 22px;
-  font-weight: 700;
-}
-
-.hero h1 span {
-  display: block;
-  color: #fbbf24;
-}
-
-/* DESCRIPTION */
-
-.hero-description {
-  max-width: 680px;
+  max-width: 896px;
   margin: 0 auto;
-  color: rgba(236, 253, 245, .75);
-  font-size: 17px;
-  line-height: 1.8;
 }
 
-/* WHATSAPP BUTTON */
+/* IMAGE */
 
-.whatsapp-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 30px;
-  min-width: 270px;
-  padding: 15px 28px;
-  border-radius: 999px;
-  background: #25D366;
-  color: #fff;
+.hero-image-link {
+  display: block;
+  width: 100%;
   text-decoration: none;
-  font-size: 17px;
-  font-weight: 800;
-  box-shadow:
-    0 12px 35px rgba(37, 211, 102, .28);
-  transition: .2s ease;
 }
 
-.whatsapp-button:hover {
-  transform: translateY(-3px);
-  box-shadow:
-    0 17px 42px rgba(37, 211, 102, .4);
-}
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 896px;
+  margin: 0 auto;
 
-.whatsapp-button svg {
-  width: 22px;
-  height: 22px;
+  border-radius: 16px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, .45),
+    0 0 30px rgba(245, 158, 11, .08);
 }
 
 /* =========================
-   ABOUT
+   ABOUT SECTION
 ========================= */
 
-.info {
-  padding: 75px 20px;
-  background: #0a2218;
+.about {
+  width: 100%;
+  padding: 70px 20px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(34, 111, 72, .25),
+      transparent 50%
+    ),
+    #0a2218;
+
   border-top: 1px solid rgba(245, 158, 11, .12);
 }
 
-.info-container {
+.about-container {
   max-width: 950px;
   margin: auto;
   text-align: center;
 }
 
-.info-label {
+.about-label {
   color: #34d399;
   font-size: 11px;
   font-weight: 800;
@@ -212,17 +171,20 @@ body {
   margin-bottom: 14px;
 }
 
-.info h2 {
+.about h2 {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(30px, 6vw, 48px);
   line-height: 1.1;
   margin-bottom: 18px;
+  color: #fff;
 }
 
-.info p {
+.about-text {
   max-width: 760px;
   margin: auto;
-  color: rgba(236, 253, 245, .68);
+
+  color: rgba(236, 253, 245, .70);
+
   font-size: 15px;
   line-height: 1.8;
 }
@@ -234,6 +196,7 @@ body {
 .features {
   max-width: 900px;
   margin: 40px auto 0;
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 14px;
@@ -241,8 +204,10 @@ body {
 
 .feature {
   background: #0e2d20;
+
   border: 1px solid rgba(245, 158, 11, .16);
   border-radius: 16px;
+
   padding: 22px 12px;
   text-align: center;
 }
@@ -253,15 +218,19 @@ body {
   margin-bottom: 10px;
 }
 
-.feature strong {
+.feature-title {
   display: block;
+
   color: #fbbf24;
   font-size: 12px;
+  font-weight: 800;
+
   margin-bottom: 7px;
 }
 
-.feature span {
+.feature-text {
   color: rgba(236, 253, 245, .62);
+
   font-size: 11px;
   line-height: 1.5;
 }
@@ -271,7 +240,9 @@ body {
 ========================= */
 
 .collections {
-  padding: 75px 20px;
+  width: 100%;
+  padding: 70px 20px;
+
   background: #061710;
 }
 
@@ -281,16 +252,33 @@ body {
   text-align: center;
 }
 
+.collections-label {
+  color: #34d399;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  margin-bottom: 14px;
+}
+
 .collections h2 {
   font-family: Georgia, "Times New Roman", serif;
+
   font-size: clamp(30px, 6vw, 48px);
+  line-height: 1.1;
+
   margin-bottom: 15px;
 }
 
 .collections-intro {
   max-width: 650px;
   margin: 0 auto 35px;
+
   color: rgba(236, 253, 245, .65);
+
   font-size: 15px;
   line-height: 1.8;
 }
@@ -303,52 +291,121 @@ body {
 
 .collection {
   background: #0a2218;
+
   border: 1px solid rgba(245, 158, 11, .15);
   border-radius: 18px;
+
   padding: 28px 18px;
 }
 
 .collection h3 {
   color: #fbbf24;
+
   font-family: Georgia, "Times New Roman", serif;
+
   font-size: 21px;
+
   margin-bottom: 10px;
 }
 
 .collection p {
   color: rgba(236, 253, 245, .62);
+
   font-size: 13px;
   line-height: 1.7;
 }
 
 /* =========================
-   FINAL CTA
+   WHATSAPP CTA
 ========================= */
 
-.final-cta {
-  padding: 75px 20px 90px;
+.cta {
+  width: 100%;
+  padding: 70px 20px 85px;
+
+  text-align: center;
+
   background:
     linear-gradient(
       180deg,
       #0a2218,
       #061710
     );
-  text-align: center;
 }
 
-.final-cta h2 {
+.cta-label {
+  color: #fbbf24;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  margin-bottom: 14px;
+}
+
+.cta h2 {
   font-family: Georgia, "Times New Roman", serif;
+
   font-size: clamp(32px, 7vw, 52px);
   line-height: 1.1;
+
   margin-bottom: 15px;
 }
 
-.final-cta p {
+.cta p {
   max-width: 560px;
   margin: auto;
+
   color: rgba(236, 253, 245, .68);
+
   font-size: 14px;
   line-height: 1.8;
+}
+
+/* BUTTON */
+
+.whatsapp-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 28px;
+
+  min-width: 270px;
+
+  padding: 15px 28px;
+
+  border-radius: 999px;
+
+  background: #25D366;
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 17px;
+  font-weight: 800;
+
+  box-shadow:
+    0 12px 35px rgba(37, 211, 102, .28);
+
+  transition: .2s ease;
+}
+
+.whatsapp-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 17px 42px rgba(37, 211, 102, .40);
+}
+
+.whatsapp-button svg {
+  width: 22px;
+  height: 22px;
 }
 
 /* =========================
@@ -356,22 +413,31 @@ body {
 ========================= */
 
 .footer {
-  padding: 30px 18px 100px;
+  width: 100%;
+
+  padding: 30px 18px 70px;
+
   background: #04100b;
+
   text-align: center;
+
   border-top: 1px solid rgba(245, 158, 11, .12);
 }
 
 .footer-brand {
   color: #fbbf24;
+
   font-size: 19px;
   font-weight: 800;
+
   letter-spacing: 1px;
 }
 
-.footer p {
+.footer-text {
   color: rgba(236, 253, 245, .45);
+
   font-size: 11px;
+
   margin-top: 7px;
 }
 
@@ -400,36 +466,16 @@ body {
   }
 
   .hero {
-    min-height: calc(100vh - 60px);
-    padding: 55px 16px 60px;
+    padding: 5px;
   }
 
-  .eyebrow {
-    font-size: 9px;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-    line-height: 1.08;
-    margin-bottom: 18px;
-  }
-
-  .hero-description {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .whatsapp-button {
+  .hero-image {
     width: 100%;
-    min-width: 0;
-    margin-top: 25px;
-    font-size: 16px;
+    border-radius: 12px;
   }
 
-  .info {
-    padding: 60px 16px;
+  .about {
+    padding: 55px 16px;
   }
 
   .features {
@@ -442,7 +488,7 @@ body {
   }
 
   .collections {
-    padding: 60px 16px;
+    padding: 55px 16px;
   }
 
   .collection-grid {
@@ -453,14 +499,17 @@ body {
     padding: 23px 16px;
   }
 
-  .final-cta {
-    padding: 60px 16px 80px;
+  .cta {
+    padding: 55px 16px 75px;
+  }
+
+  .whatsapp-button {
+    width: 100%;
+    min-width: 0;
   }
 }
 
-/* =========================
-   VERY SMALL PHONES
-========================= */
+/* VERY SMALL PHONES */
 
 @media (max-width: 360px) {
 
@@ -470,15 +519,11 @@ body {
   }
 
   .hero {
-    padding-top: 45px;
+    padding: 4px;
   }
 
-  .hero h1 {
-    font-size: 31px;
-  }
-
-  .hero-description {
-    font-size: 13px;
+  .hero-image {
+    border-radius: 10px;
   }
 
   .features {
@@ -491,6 +536,7 @@ body {
 }
 </style>
 </head>
+
 
 <body>
 
@@ -514,6 +560,7 @@ body {
 
     </a>
 
+
     <a
       href="https://api.whatsapp.com/send/?phone=15554703730&text=Hey+I+seen+your+ads&type=phone_number&app_absent=0"
       target="_blank"
@@ -535,34 +582,30 @@ body {
 
 
 <!-- =========================
-     HERO
+     TOP IMAGE
 ========================= -->
 
 <section class="hero" id="top">
-<section class="hero" id="top">
+
   <div class="hero-container">
 
     <a
       href="https://api.whatsapp.com/send/?phone=15554703730&text=Hey+I+seen+your+ads&type=phone_number&app_absent=0"
       target="_blank"
       rel="noopener noreferrer"
-      style="display:block;width:100%;"
+      class="hero-image-link"
     >
+
       <img
         src="dimand.png"
-        alt="dimand Twenty Faur Seven"
-        style="
-          display:block;
-          width:100%;
-          max-width:896px;
-          height:auto;
-          margin:0 auto;
-          border-radius:18px;
-        "
+        alt="dimand Twenty Faur Seven Premium Jewellery"
+        class="hero-image"
       >
+
     </a>
 
   </div>
+
 </section>
 
 
@@ -570,49 +613,92 @@ body {
      ABOUT
 ========================= -->
 
-<section class="info">
+<section class="about">
 
-  <div class="info-container">
+  <div class="about-container">
 
-    <div class="info-label">
+    <div class="about-label">
       DIMAND TWENTY FAUR SEVEN
     </div>
 
     <h2>
-      Jewellery That Feels Truly Yours
+      Jewellery Crafted for Every Moment
     </h2>
 
-    <p>
-      From elegant everyday pieces to statement jewellery for
-      important celebrations, our collection is designed around
-      timeless style, refined detailing and a premium finish.
-      Find a piece that matches your personality and your moment.
+    <p class="about-text">
+      Discover elegant jewellery created for celebrations,
+      gifting, weddings and everyday style. Explore refined
+      designs with a timeless look and a premium finish.
     </p>
+
 
     <div class="features">
 
       <div class="feature">
-        <div class="feature-icon">◆</div>
-        <strong>PURE STYLE</strong>
-        <span>Elegant designs with a refined finish.</span>
+
+        <div class="feature-icon">
+          ◆
+        </div>
+
+        <span class="feature-title">
+          ELEGANT STYLE
+        </span>
+
+        <span class="feature-text">
+          Refined designs made for every occasion.
+        </span>
+
       </div>
 
-      <div class="feature">
-        <div class="feature-icon">◇</div>
-        <strong>CRAFTED DETAIL</strong>
-        <span>Thoughtful detailing across every piece.</span>
-      </div>
 
       <div class="feature">
-        <div class="feature-icon">★</div>
-        <strong>TIMELESS LOOK</strong>
-        <span>Styles made for celebrations and everyday wear.</span>
+
+        <div class="feature-icon">
+          ◇
+        </div>
+
+        <span class="feature-title">
+          FINE DETAIL
+        </span>
+
+        <span class="feature-text">
+          Beautiful detailing with a premium finish.
+        </span>
+
       </div>
 
+
       <div class="feature">
-        <div class="feature-icon">♢</div>
-        <strong>EASY CONTACT</strong>
-        <span>Connect directly with us through WhatsApp.</span>
+
+        <div class="feature-icon">
+          ★
+        </div>
+
+        <span class="feature-title">
+          TIMELESS LOOK
+        </span>
+
+        <span class="feature-text">
+          Jewellery designed to stay in style.
+        </span>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          ♢
+        </div>
+
+        <span class="feature-title">
+          EASY CONTACT
+        </span>
+
+        <span class="feature-text">
+          Connect directly with us on WhatsApp.
+        </span>
+
       </div>
 
     </div>
@@ -630,7 +716,7 @@ body {
 
   <div class="collections-container">
 
-    <div class="info-label">
+    <div class="collections-label">
       OUR COLLECTIONS
     </div>
 
@@ -643,6 +729,7 @@ body {
       gifting, weddings and everyday elegance.
     </p>
 
+
     <div class="collection-grid">
 
       <div class="collection">
@@ -652,8 +739,8 @@ body {
         </h3>
 
         <p>
-          Classic and contemporary pieces designed
-          to complement every occasion.
+          Classic and contemporary jewellery designed
+          to complement your personal style.
         </p>
 
       </div>
@@ -667,7 +754,7 @@ body {
 
         <p>
           Elegant designs created to add brilliance
-          to your most memorable moments.
+          to memorable occasions.
         </p>
 
       </div>
@@ -680,8 +767,8 @@ body {
         </h3>
 
         <p>
-          Statement pieces for weddings,
-          celebrations and unforgettable days.
+          Statement pieces designed for weddings,
+          celebrations and special days.
         </p>
 
       </div>
@@ -694,12 +781,12 @@ body {
 
 
 <!-- =========================
-     FINAL CTA
+     FINAL WHATSAPP CTA
 ========================= -->
 
-<section class="final-cta">
+<section class="cta">
 
-  <div class="info-label">
+  <div class="cta-label">
     GET IN TOUCH
   </div>
 
@@ -709,8 +796,9 @@ body {
 
   <p>
     Want to know more about our jewellery or available designs?
-    Send us a message on WhatsApp and our team will assist you.
+    Message us directly on WhatsApp and connect with our team.
   </p>
+
 
   <a
     href="https://api.whatsapp.com/send/?phone=15554703730&text=Hey+I+seen+your+ads&type=phone_number&app_absent=0"
@@ -740,7 +828,7 @@ body {
     dimand Twenty Faur Seven
   </div>
 
-  <p>
+  <p class="footer-text">
     Timeless Jewellery · Modern Elegance
   </p>
 
